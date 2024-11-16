@@ -1,21 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* styles.css */
+body {
+    direction: rtl;
+    background: #ffffff;
+    color: #1A1A1A;
     font-family: 'Cairo', sans-serif;
 }
 
-:root {
-    --primary: #D81C1C;
-    --secondary: #FF6A00;
-    --dark: #ffffff;
-    --white: #1A1A1A;
+.header {
+    background: #ffffff;
+    border-bottom: 2px solid #D81C1C;
 }
 
-body {
-    direction: rtl;
-    background: var(--dark);
-    color: var(--white);
+.nav-links a {
+    color: #1A1A1A;
+    text-decoration: none;
 }
 
-/* باقي كود CSS مضمّن ضمن العنصر <style> */
+.hero {
+    background: linear-gradient(rgba(216,28,28,0.1), rgba(255,106,0,0.1));
+}
+
+.product-card {
+    background: #ffffff;
+    border: 2px solid #D81C1C;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #D81C1C, #FF6A00);
+}
