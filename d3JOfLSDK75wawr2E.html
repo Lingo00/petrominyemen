@@ -1,0 +1,326 @@
+<html><head><base href="http://example.com/" />
+<title>Petromin International | زيوت بترومين العالمية</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root {
+  --main-red: #BE1D2C;
+  --main-orange: #ED7423;
+  --light-gray: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+.navbar {
+  background-color: var(--main-red);
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  height: 70px; /* Increased from 50px to 70px */
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--main-orange);
+}
+
+.hero {
+  background: linear-gradient(45deg, var(--main-red), var(--main-orange));
+  color: white;
+  text-align: center;
+  padding: 8rem 1rem 4rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: white;
+  color: var(--main-red);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-family: 'Cairo', sans-serif;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.products {
+  padding: 4rem 1rem;
+  background-color: var(--light-gray);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card svg {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  color: var(--main-red);
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #ffffff;
+  color: black;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.credits {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.credits a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--main-red);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .product-card {
+    padding: 1.5rem;
+  }
+
+  .product-card svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    height: 60px; /* Slightly smaller on mobile but still larger than before */
+  }
+
+  .nav-container {
+    padding: 0.5rem;
+  }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <img src="/PHOTO51.jpg" alt="شعار بترومين" class="logo">
+      <div class="menu-toggle">☰</div>
+      <ul class="nav-links">
+        <li><a href="#products">منتجاتنا</a></li>
+        <li><a href="#about">عن الشركة</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+        <li><a href="#locations">مواقعنا</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>بترومين لزيوت السيارات العالمية</h1>
+    <p>نقدم أفضل زيوت السيارات بجودة عالمية لضمان أداء متميز</p>
+    <button class="cta-button">تصفح منتجاتنا</button>
+  </section>
+
+  <section class="products" id="products">
+    <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">منتجاتنا المميزة</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--main-red);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--main-orange);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="40" fill="url(#grad1)" />
+          <path d="M35 50c0-8.3 6.7-15 15-15s15 6.7 15 15-6.7 15-15 15-15-6.7-15-15z" fill="none" stroke="white" stroke-width="3"/>
+          <path d="M50 35v30M35 50h30" stroke="white" stroke-width="3"/>
+        </svg>
+        <h3>زيت المحركات الاصطناعي</h3>
+        <p>حماية فائقة وأداء متميز لمحرك سيارتك</p>
+      </div>
+      <div class="product-card">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--main-orange);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--main-red);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="40" fill="url(#grad2)" />
+          <path d="M30 45h40v10H30z" fill="white"/>
+          <circle cx="35" cy="50" r="6" fill="var(--main-orange)"/>
+          <circle cx="65" cy="50" r="6" fill="var(--main-orange)"/>
+        </svg>
+        <h3>زيت ناقل الحركة</h3>
+        <p>انسيابية في الأداء وحماية متكاملة</p>
+      </div>
+      <div class="product-card">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--main-red);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--main-orange);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="40" fill="url(#grad3)" />
+          <path d="M35 65c0-15 30-15 30 0" fill="none" stroke="white" stroke-width="3"/>
+          <circle cx="50" cy="35" r="5" fill="white"/>
+          <rect x="47" y="40" width="6" height="20" fill="white"/>
+        </svg>
+        <h3>زيت الفرامل</h3>
+        <p>أمان وموثوقية عالية لنظام الفرامل</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2024 بترومين لزيوت السيارات العالمية</p>
+    <div class="credits">
+      <p>تصميم وبرمجة: <a href="tel:777007199">شركة شوبنق تابكس</a></p>
+      <p>للتواصل: <a href="tel:777007199">777007199</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelector('.cta-button').addEventListener('click', function() {
+      document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.querySelector('.navbar').style.backgroundColor = 'rgba(190, 29, 44, 0.95)';
+      } else {
+        document.querySelector('.navbar').style.backgroundColor = 'var(--main-red)';
+      }
+    });
+  </script>
+</body></html>
