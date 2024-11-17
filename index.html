@@ -1,4 +1,4 @@
-<html><head><base href="http://example.com/" />
+<html><head><base href="http://www.petrominyemen.com/" />
 <title>Petromin International | زيوت بترومين العالمية</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-  height: 70px; /* Increased from 50px to 70px */
+  height: 70px;
   animation: logoFloat 3s ease-in-out infinite;
 }
 
@@ -51,8 +51,8 @@ body {
 
 .menu-toggle {
   display: none;
+  font-size: 2rem;
   color: white;
-  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ body {
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
@@ -74,16 +74,10 @@ body {
 }
 
 .hero {
-  background: linear-gradient(45deg, var(--main-red), var(--main-orange));
-  color: white;
-  text-align: center;
   padding: 8rem 1rem 4rem;
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--main-red), var(--main-orange));
+  color: white;
 }
 
 .hero h1 {
@@ -102,10 +96,9 @@ body {
   border: none;
   padding: 1rem 2rem;
   font-size: 1.1rem;
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  font-family: 'Cairo', sans-serif;
 }
 
 .cta-button:hover {
@@ -128,33 +121,31 @@ body {
 .product-card {
   background: white;
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .product-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .product-card svg {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 1rem;
 }
 
 .product-card h3 {
   color: var(--main-red);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 footer {
-  background-color: #ffffff;
-  color: black;
+  background-color: white;
   padding: 2rem 1rem;
   text-align: center;
-  font-size: 0.9rem;
+  color: black;
 }
 
 .credits {
@@ -163,7 +154,7 @@ footer {
 }
 
 .credits a {
-  color: black;
+  color: var(--main-red);
   text-decoration: none;
 }
 
@@ -199,6 +190,7 @@ footer {
 
   .products-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
     padding: 0 1rem;
   }
 
@@ -206,17 +198,27 @@ footer {
     padding: 1.5rem;
   }
 
-  .product-card svg {
-    width: 60px;
-    height: 60px;
-  }
-
   .logo {
-    height: 60px; /* Slightly smaller on mobile but still larger than before */
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
   }
 
-  .nav-container {
-    padding: 0.5rem;
+  .hero {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .products {
+    padding: 3rem 1rem;
+  }
+
+  .product-card svg {
+    width: 80px;
+    height: 80px;
   }
 }
 </style>
@@ -225,13 +227,15 @@ footer {
 <body>
   <nav class="navbar">
     <div class="nav-container">
-      <img src="/PHOTO5.jpg" alt="شعار بترومين" class="logo">
+      <a href="https://www.petrominyemen.com/">
+        <img src="/PHOTO5.jpg" alt="شعار بترومين - شعار باللونين الأحمر والأبيض مع كتابة عربية باللون البرتقالي والأبيض على خلفية حمراء" class="logo">
+      </a>
       <div class="menu-toggle">☰</div>
       <ul class="nav-links">
-        <li><a href="#products">منتجاتنا</a></li>
-        <li><a href="#about">عن الشركة</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
-        <li><a href="#locations">مواقعنا</a></li>
+        <li><a href="https://www.petrominyemen.com/#products">منتجاتنا</a></li>
+        <li><a href="https://www.petrominyemen.com/#about">عن الشركة</a></li>
+        <li><a href="https://www.petrominyemen.com/#contact">تواصل معنا</a></li>
+        <li><a href="https://www.petrominyemen.com/#locations">مواقعنا</a></li>
       </ul>
     </div>
   </nav>
