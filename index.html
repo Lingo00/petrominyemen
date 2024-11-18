@@ -12,7 +12,7 @@
 
 body {
   direction: rtl;
-  background: #f8f9fa;
+  background: #ffffff;
 }
 
 nav {
@@ -20,7 +20,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
-  background: #ff0000;
+  background: #e31837;
   padding: 1.5rem;
   z-index: 1000;
   transition: all 0.3s ease;
@@ -46,7 +46,7 @@ nav {
 }
 
 .header {
-  background: linear-gradient(rgba(255,0,0,0.3), rgba(255,0,0,0.3)), url('hero-bg.jpg');
+  background: linear-gradient(rgba(227, 24, 55, 0.3), rgba(227, 24, 55, 0.3)), url('hero-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -65,7 +65,7 @@ nav {
   left: 0;
   right: 0;
   height: 150px;
-  background: linear-gradient(transparent, #f8f9fa);
+  background: linear-gradient(transparent, #ffffff);
 }
 
 .logo {
@@ -104,7 +104,7 @@ nav {
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #ff0000;
+  background: #e31837;
   color: white;
   text-decoration: none;
   border-radius: 30px;
@@ -119,6 +119,7 @@ nav {
 .products {
   padding: 4rem 2rem;
   text-align: center;
+  background: #ffffff;
 }
 
 .products h2 {
@@ -140,10 +141,16 @@ nav {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  border: 2px solid #e31837;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
 }
 
 .product-card h3 {
-  color: #000000;
+  color: #e31837;
   margin-bottom: 1rem;
 }
 
@@ -152,7 +159,7 @@ nav {
 }
 
 .footer {
-  background: #f8f9fa;
+  background: #ffffff;
   padding: 3rem 2rem;
   text-align: center;
   color: #000000;
@@ -168,7 +175,7 @@ nav {
 }
 
 .footer a {
-  color: #000000;
+  color: #e31837;
   text-decoration: none;
 }
 
@@ -237,7 +244,7 @@ nav {
 
 <header class="header">
   <div class="hero-content">
-    <img src="/PHOTO51.jpg" alt="شعار بترومين - تصميم حديث باللون الأحمر والأبيض" class="logo" width="250" height="125">
+    <img src="/petromin-logo.png" alt="شعار بترومين - شعار الشركة باللغتين العربية والإنجليزية، النص العربي باللون البرتقالي والإنجليزي باللون الأبيض" class="logo" width="250" height="125">
     <h1 class="hero-title">شركة بترومين لزيوت المحركات العالمية</h1>
     <p class="hero-subtitle">نحو مستقبل أفضل للمحركات</p>
     <a href="https://petrominyemen.com/products" class="cta-button">اكتشف منتجاتنا</a>
@@ -284,10 +291,10 @@ nav {
 window.addEventListener('scroll', function() {
   const nav = document.querySelector('nav');
   if (window.scrollY > 50) {
-    nav.style.background = '#e60000';
+    nav.style.background = '#cc1630';
     nav.style.padding = '1rem';
   } else {
-    nav.style.background = '#ff0000';
+    nav.style.background = '#e31837';
     nav.style.padding = '1.5rem';
   }
 });
